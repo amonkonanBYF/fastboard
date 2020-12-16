@@ -21,7 +21,9 @@ class SecurityController extends AbstractController
     public function index(Request $request): Response
     {
 
-        return $this->render('base.html.twig',);
+        return $this->render('home/index.html.twig', [
+            'controller_name' => 'HomeController'    
+        ]);
     }
     /**
      * @Route("/api/login", name="login_check")

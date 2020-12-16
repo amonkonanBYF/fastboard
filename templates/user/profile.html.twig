@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="h1"> Profil </h1>
+   Nom: {{user.firstName}}
+   Prenom : {{user.lastName}}
+    email : {{user.email}}
+    inscrire depuis le : {{user.dateCreated | date}}
+    <div  class="col">
+        <div  class="row">
+            <label> entrer votre numero: </label>
+            <input type="number" name="userTicket" >
+        </div>
+        <div  class="row">
+            <button type="submit" class="btn btn-success">valider</button>
+        </div>
+    </div>
+    </div>
+   
+ 
+{% endblock %}
