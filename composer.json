@@ -77,7 +77,7 @@
             "requirements-checker": "script"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            
         ],
         "post-update-cmd": [
             "@auto-scripts"
