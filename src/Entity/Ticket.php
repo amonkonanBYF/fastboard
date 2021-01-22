@@ -29,7 +29,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *           },
  *          "put"={"security"="is_granted('ROLE_ADMIN','ROLE_SERVEUR')", "security_message"="Only admins and serveur can put ticket."},
  *          "patch"={"security"="is_granted('ROLE_ADMIN','ROLE_SERVEUR')", "security_message"="Only admins and serveur can put ticket."},
- *          "delete"
+ *          "delete"={"security"="is_granted('ROLE_ADMIN')", "security_message"="Only admins can delete ticket."}
  *
  *     })
  * @ORM\Entity(repositoryClass=TicketRepository::class)
