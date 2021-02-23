@@ -2,3 +2,12 @@ api_platform:
     resource: .
     type: api_platform
     prefix: /api
+
+app_swagger_ui:
+    path: /api/documentation
+    methods: GET
+    defaults: {}
+
+login:
+    path: /login
+    methods: ['POST']

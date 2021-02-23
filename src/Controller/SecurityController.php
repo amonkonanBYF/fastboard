@@ -25,19 +25,19 @@ class SecurityController extends AbstractController
             'controller_name' => 'HomeController'    
         ]);
     }
-    /**
-     * @Route("/api/login", name="login_check")
-     */
-    public function login()
-    {
+    // /**
+    //  * @Route("/api/login", name="login")
+    //  */
+    // public function login()
+    // {
 
-        if (!$this->isGranted('IS_AUTHENTICATED_FULLY')) {
-            return $this->json([
-                'error' => "Invalid login request: check that the Content-Type and Accept header is application/json."
-            ], 400);
-        }
+    //     // if (!$this->isGranted('IS_AUTHENTICATED_FULLY')) {
+    //     //     return $this->json([
+    //     //         'error' => "Invalid login request: check that the Content-Type and Accept header is application/json."
+    //     //     ], 400);
+    //     // }
 
-        return $this->json(['user' => $this->getUser() ? $this->getUser() : null]);
-    }
+    //     // return $this->json(['user' => $this->getUser() ? $this->getUser() : null]);
+    // }
 
 }

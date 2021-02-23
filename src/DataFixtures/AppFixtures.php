@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints\DateTime;
 
 class AppFixtures extends Fixture
 {
-    private UserPasswordEncoderInterface $encoder;
+    //private UserPasswordEncoderInterface $encoder;
 
 
     public function __construct(UserPasswordEncoderInterface $encoder)
